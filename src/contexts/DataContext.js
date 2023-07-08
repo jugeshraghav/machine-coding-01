@@ -11,6 +11,8 @@ const reducer = (state, action) => {
   switch (type) {
     case "CHANGE_SHELF":
       return { ...state, books: payLoad };
+    default:
+      return state;
   }
 };
 
